@@ -1,0 +1,500 @@
+/* DIEM DEN */
+
+.diemdencontainer
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+}
+
+.ddbackground
+{
+    width: 25vw;
+    height:95vh;
+    margin-top: 5vh;
+    background-color: #FFFFFF;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.ddbackground img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    
+}
+.ddbackgroundblack
+{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+}
+
+/*
+.ddbackground:hover
+{
+    height: 99vh;
+    margin-top: 1vh;
+}*/
+
+.ddbackground:hover img
+{
+    transform: scale(1.05)
+}
+
+.ddbackground:hover .ddbackgroundblack
+{
+    opacity: 0.2;
+}
+
+
+.ddcontent
+{
+    height: auto;
+    width: 100%;
+    padding-bottom:8vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1)
+}
+
+.ddbackground:hover .ddcontent
+{
+    transform: scale(1.1)
+}
+
+
+
+
+
+/**********************************************************************************************/
+
+/* DIEM DEN CON */
+
+.diemden1container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.diemden1container:hover{
+    
+}
+
+.diemdencontent
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.diemdencontentwhite
+{
+    width: 100%;
+    height: 95vh;
+    margin-top: 5vh;
+    background-color: white;
+    position: relative;
+    top:0;
+}
+
+.diemdencontenttext
+{
+    height: auto;
+    width: 100%;
+    padding-left: 7.5vw;
+    padding-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
+
+.diemdenimage
+{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.diemdenimage:hover img
+{
+    transform: scale(1.05)
+}
+.diemdenimage img
+{
+    height: 99.9vh;
+    margin-top: 0.1vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.diemdenimgbox
+{
+    height:100%;
+    width: 100%;
+    position: absolute;
+}
+
+.diemdenimgcontent
+{
+    height: 95%;
+    margin-top: 5%;
+    
+    width: 24px;
+    writing-mode: vertical-rl;
+    margin-right: 3vw;
+    float: right;
+    color: white;
+}
+.nextbuttonbox
+{
+    height:100%;
+    width: 100%;
+    position: absolute;
+}
+.nextbutton
+{
+    height: 100%;
+    width: 24px;
+    margin-right: 3vw;
+    float: right;
+}
+
+.nextbutton img
+{
+    width: 18px;
+    height: auto;
+    margin-top: 92vh;
+}
+
+
+
+.diemden2container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.diemden3container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.diemden4container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+#diemden1page
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+
+#diemden1page img
+{
+    height: 99.9vh;
+    margin-top: 0.1vh;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    transition: all 1s cubic-bezier(.7,0,.26,1);
+}
+
+.diemdenpageblack
+{
+    opacity: 0;
+    mix-blend-mode:multiply;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+.diemdenpageback
+{
+    width: 1080px;
+    height: auto;
+    max-width: 90vw;
+    margin-top: 12vh;
+    opacity: 0.99;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1)
+}
+
+.diemdenpageback:hover
+{
+      opacity: 0.8;
+    transform: scale(1.02);
+}
+
+.diemdenpagecontainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.diemdenpageback .subhead20 {
+    color:#ffffff;
+}
+
+.diemdenpageback .arrow {
+    color:#ffffff;
+}
+
+.diemdenpagetitle
+{
+    width:1080px;
+    max-width: 90vw;
+    height: auto;
+}
+
+.diemdenpagetitle .headline90 {
+    color: #ffffff;
+}
+
+.diemdenpagecontent{
+    width: 1080px;
+    max-width: 90vw;   
+    bottom:0;
+    height:70vh;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 1366px){
+    .diemdenpagecontent{
+        height: 78vh;
+    }
+}
+.diemdenpagecontent .bodytext24 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.diemdenpagecontent::-webkit-scrollbar {
+  display: none;
+}
+
+/*******************/
+
+#diemden2page
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+
+#diemden2page img
+{
+    height: 99.9vh;
+    margin-top: 0.1vh;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    transition: all 1s cubic-bezier(.7,0,.26,1);
+}
+
+/*******************/
+
+#diemden3page
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+
+#diemden3page img
+{
+    height: 99.9vh;
+    margin-top: 0.1vh;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    transition: all 1s cubic-bezier(.7,0,.26,1);
+}
+
+/*******************/
+
+#diemden4page
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+
+#diemden4page img
+{
+    height: 99.9vh;
+    margin-top: 0.1vh;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    transition: all 1s cubic-bezier(.7,0,.26,1);
+}
+
+
+
+
+/**********************************************************************************************************/
+
+@media screen and (max-width: 1024px) 
+{
+    
+    .diemdencontainer
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .ddbackground
+{
+    width: 50vw;
+    height:50vh;
+    margin-top: 0;
+    background-color: #FFFFFF;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+    .diemdencontenttext {padding-left: 6vw}
+    .diemdencontenttext .headline90
+{
+    max-width: 33vw;
+    line-height: 6vw;
+}
+    .diemdencontenttext .overline30 {
+        font-size: 2vw;
+        line-height: 6vw;
+    }
+    .diemdencontenttext .bodytext24
+{
+    font-size: 22px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+    .diemdenimage .caption15
+    {
+        display: none;
+    }
+}
+    
+
+
+/**********************************************************************************************************/
+
+@media screen and (max-width: 768px) 
+{
+    .diemdencontenttext .headline90{
+        font-size: 45px;
+        line-height: 60px;
+        max-width: 30vw;
+    }
+     .diemdencontenttext .bodytext24
+{
+    font-size: 18px;
+    line-height: 36px;
+}
+
+}

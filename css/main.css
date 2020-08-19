@@ -1,0 +1,547 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{	
+	font-family: OktaRegular;
+	text-align: left;
+	font-size: 1.1vw;
+	line-height: 2.5vw;
+	letter-spacing: 0.6px;
+	color: #606060;
+	opacity:1;
+	margin:0;
+    padding:0;
+    height: 100vh;
+}
+
+/* FONTFACE */
+@font-face
+{
+	font-family: BoilingRegular;
+	src: url("../fonts/Boiling-Regular.woff");
+}
+@font-face
+{
+	font-family: BoilingMedium;
+	src:url("../fonts/Boiling-Medium.woff");
+}
+@font-face
+{
+	font-family: OktaRegular;
+	src:url("../fonts/Groteskly Yours - Okta Neue Normal.otf");
+}
+@font-face
+{
+	font-family: OktaBold;
+	src:url("../fonts/Groteskly Yours - Okta Neue Bold.otf");
+}
+@font-face
+{
+	font-family: OktaMedium;
+	src:url("../fonts/Groteskly Yours - Okta Neue Medium.otf");
+}
+@font-face
+{
+	font-family: OktaBlack;
+	src: url("../fonts/Groteskly Yours - Okta Neue Black.otf");
+}
+@font-face
+{
+    font-family: StrokeWeight;
+    src: url("../fonts/strokeWeight 140.otf");
+}
+
+/* TYPESETTING */
+.headline90 {
+	font-family: BoilingRegular;
+	text-align: left;
+	font-size:4vw;
+	line-height: 4.5vw;
+	letter-spacing: 0px;
+	color: #16613A;
+	opacity: 1;
+    margin-top: -10px;
+    margin-bottom: 0.75vw;
+    cursor: default;
+}
+.headline48 {
+	font-family: BoilingMedium;
+	text-align: left;
+	font-size: 2.3vw;
+	line-height: 60px;
+	letter-spacing: 0.96px;
+	color: #16613A;
+	opacity: 1;
+    margin-bottom: 10px;
+    cursor: default;
+}
+.overline30 {
+	font-family: OktaBold;
+	text-align: left;
+	letter-spacing: 3px;
+	color: #D07347;
+	opacity: 1;
+    cursor: default;
+    font-size: 1.4vw;
+    line-height: 4vw;
+}
+.subhead20 {
+	font-family: OktaBold;
+	text-align: left;
+	font-size: 1.1vw;
+	line-height: 1.25vw;
+	letter-spacing: 2px;
+	color: #347653;
+	opacity: 1;
+    cursor: default;
+}
+.title30 {
+	font-family: OktaBold;
+	text-align: left;
+
+	font-size: 1.5vw;
+	line-height: 2vw;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 1;
+    cursor: default;
+}
+.bodytext24 {
+	font-family: OktaRegular;
+	text-align: left;
+	font-size: 1.1vw;
+	line-height: 2.5vw;
+	letter-spacing: 0.6px;
+	color: #606060;
+	opacity: 1;
+    cursor: default;
+}
+.caption20 {	
+	font-family: OktaRegular;
+	text-align: left;
+	font-size: 1.1vw;
+	line-height: 2.2vw;
+	letter-spacing: 0.8px;
+	color: #606060;
+	opacity: 1;
+}
+.caption15 {	
+	font-family: OktaRegular;
+	text-align: center;
+	font-size: 0.75vw;
+	font-family: 30px;
+	letter-spacing: 2.25px;
+	color: #FFFFFF;
+	opacity: 0.9;
+    margin-right: -10px;
+    text-shadow: 0px 2px 15px #000000;
+}
+.menutext {
+	font-family: OktaMedium;
+	text-align: left;
+	font-size: 0.9vw;
+	letter-spacing: 1.8px;
+	color: #333333;
+	opacity: 0.8;
+}
+.menutextbold {
+	font-family: OktaBlack;
+	text-align: left;
+	font-size: 0.9vw;
+	letter-spacing: 1.8px;
+	color: #333333;
+	opacity: 1;
+}
+.texthighlight {
+    color: #347653;
+    transition: all 0.2s ease-in-out;
+}
+.arrow {
+    font-family: StrokeWeight;
+    text-align: left;
+    font-size: 1.1vw;
+    color: #347653;
+    opacity: 1;
+}
+.subhead20:hover{color:#D07347}
+
+
+/* CONTAINER */
+
+.container
+{
+    width:100%;
+    height:auto;
+    background-color:#F3F3F3;
+}
+
+#fullpage
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* TOPNAV */
+
+.topnavcontainer
+{
+    height:auto;
+    width:100vw;
+    position: fixed;
+    top: 0;
+    z-index:20;
+    opacity: 1;
+    transition: 1.5s;
+    animation-delay: 2s;
+    opacity: 1;
+    max-height: 4.5vw;
+}
+
+.topnav
+{
+	overflow:hidden;
+	background-color:#FFFFFF;
+	height:auto;
+	width:100vw;
+	box-shadow: 0px 3px 25px #0000001A;
+    position: fixed;
+    top: 0;
+    max-height: 4.5vw;
+}
+
+.logo
+{
+	width:15vw;
+	height:80px;
+    max-height: 4.5vw;
+	padding: 0 0 0 3vw;
+	float: left;
+	display: flex;
+  	align-items: center;
+}
+
+.menu
+{
+	width:80vw;
+	height: 80px;
+    max-height: 4.5vw;
+	font-family: OktaMedium;
+	font-size: 1vw;
+	letter-spacing: 1.8px;
+	color: #333333;
+	opacity: .99;
+	float: right;
+	padding-right: 1.5vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float: right;
+}
+
+.menu ul li
+{
+    float: left;
+}
+
+.menu ul li a, .dropbtn
+{
+	display:block;
+	padding: 18px 1.5vw 18px 1.5vw;
+	text-align:center;
+	text-decoration: none;
+	color: #333333;
+    
+}
+
+.menu ul li a:hover:not(.activ), dropdown:hover .dropbtn
+{
+	font-family: OktaBlack;
+	font-size: 1vw;
+	letter-spacing: 1.5px;
+	color: #333333;
+	opacity: 1;
+}
+
+.menu ul li.active a 
+{
+	border-top: 5px solid #347653;
+    padding: 13px 1.5vw 18px 1.5vw;
+    font-family: OktaBlack;
+    letter-spacing: 1.5px;
+} 
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 60px;
+    background-color: #fffFff;
+    min-width: 160px;
+    box-shadow: 0px 20px 25px #0000001A;
+    text-align: left;
+    z-index: 1;
+    transition: all .2s ease-in;
+    opacity: 0;
+}
+
+
+
+.dropdown-content a {
+    color: #333333;
+    padding: 0.9vw 1.5vw;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {opacity: 1;top:4.5vw}
+
+
+
+
+/* SOCIAL MEDIA */
+
+.socialmediabox
+{
+    width:1vw;
+    max-width: 1vw;
+    height: 100vh;
+    position: fixed;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    animation-delay:0.1s;
+}
+.socialmediabox img
+{
+    margin: 15px 0px;
+    max-width: 1vw;
+}
+
+
+
+/*PROGRESS BAR */
+.progressbar
+{
+    width:350px;
+    height: 100vh;
+    position: fixed;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+}
+.progress-container {
+    width: 350px;
+    height: 2px;
+    background: #CDCDCD;
+    display: flex;
+    align-items: center;
+    margin-top: 94vh;
+    margin-left: 3vw;
+    position: fixed;
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    animation-delay:0.1s;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #347653;
+  width: 0%;
+}
+
+
+
+}
+
+.lienhecontainer
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+/* BUTTON*/
+.whitebutton 
+{
+  background-color: #FFFFFF;
+  border: none;
+  color: #333333;
+  padding: 0.4vw 1.7vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: OktaBlack;
+  font-size: 0.9vw;
+  cursor: pointer;
+  position:absolute;
+    bottom:0;
+    margin-bottom: 4vw;
+    z-index: 5;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1)
+}
+
+.whitebutton:hover
+{
+    color: #FFFFFF;
+    background-color: #16613A;
+    transform: scale(1.05)
+}
+
+
+
+
+@media screen and (max-width: 1280px)
+{
+	.menu
+	{
+		width:80vw;
+	}
+}
+
+
+/*************************************************************************************************************************************************************/
+
+@media screen and (max-width: 1024px)
+{
+    .progressbar{display: none};
+    .socialmediabox{display:none};
+    /* TYPESETTING */
+.headline90 {
+	font-family: BoilingRegular;
+	text-align: left;
+	font-size:4vw;
+	line-height: 4.5vw;
+	letter-spacing: 0px;
+	color: #16613A;
+	opacity: 1;
+    margin-top: -10px;
+    margin-bottom: 0.75vw;
+    cursor: default;
+}
+.headline48 {
+	font-family: BoilingMedium;
+	text-align: left;
+	font-size: 2.3vw;
+	line-height: 60px;
+	letter-spacing: 0.96px;
+	color: #16613A;
+	opacity: 1;
+    margin-bottom: 10px;
+    cursor: default;
+}
+.overline30 {
+	font-family: OktaBold;
+	text-align: left;
+	letter-spacing: 3px;
+	color: #D07347;
+	opacity: 1;
+    cursor: default;
+    font-size: 2vw;
+    font-size: 1.4vw;
+}
+.subhead20 {
+	font-family: OktaBold;
+	text-align: left;
+	font-size: 2vw;
+	line-height: 1.2vw;
+	letter-spacing: 2px;
+	color: #347653;
+	opacity: 1;
+    cursor: default;
+}
+.title30 {
+	font-family: OktaBold;
+	text-align: left;
+	font-size: 3vw;
+	line-height: 5vw;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 1;
+    cursor: default;
+}
+.bodytext24 {
+	font-family: OktaRegular;
+	text-align: left;
+	font-size: 1.5vw;
+	line-height: 3vw;
+	letter-spacing: 0.6px;
+	color: #606060;
+	opacity: 1;
+    cursor: default;
+}
+.caption20 {	
+	font-family: OktaRegular;
+	text-align: left;
+	font-size: 1.1vw;
+	line-height: 2.2vw;
+	letter-spacing: 0.8px;
+	color: #606060;
+	opacity: 1;
+}
+.caption15 {	
+	font-family: OktaRegular;
+	text-align: center;
+	font-size: 0.75vw;
+	font-family: 30px;
+	letter-spacing: 2.25px;
+	color: #FFFFFF;
+	opacity: 0.9;
+    margin-right: -10px;
+    text-shadow: 0px 2px 15px #000000;
+}
+.menutext {
+	font-family: OktaMedium;
+	text-align: left;
+	font-size: 0.9vw;
+	letter-spacing: 1.8px;
+	color: #333333;
+	opacity: 0.8;
+}
+.menutextbold {
+	font-family: OktaBlack;
+	text-align: left;
+	font-size: 0.9vw;
+	letter-spacing: 1.8px;
+	color: #333333;
+	opacity: 1;
+}
+    
+    
+    
+}
